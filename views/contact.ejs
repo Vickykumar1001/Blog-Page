@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hyperbole</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="shortcut icon" href="/img/writing.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Parisienne&family=Solitreo&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script
+    src="https://kit.fontawesome.com/cc2523ce93.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="/css/form.css">
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
+          <label class="logo">HYPERBOLE🙊</label>
+          <ul>
+          <li id="home" ><a class="active" href="/">HOME</a></li>
+          <li id="about"><a href="/about">ABOUT</a></li>
+          <li id="contact"><a href="/contact">CONTACT</a></li>
+          </ul>
+    </nav>
+    <div class="container">
+<h1>Contact</h1>
+<h3>I would be happy to hear from my readers!</h3> 
+<br>
+<p>Whether you have a question, comment, or just want to say hi, please feel free to reach out.</p> 
+<p> You can reach us by email at <em>vicky9060993097@gmail.com </em>, or by filling out the contact form below.</p>
+<br>
+<p> We look forward to connecting with you!"</p>
+<br>
+<div class="container2">
+      <div class="contact-form">
+        <form action="mailto:vicky9060993097@gmail.com" autocomplete="off">
+          <h3 class="title">Contact me</h3>
+          <div class="input-container">
+            <input type="text" name="name" class="input" />
+            <label for="">Name</label>
+            <span>Name</span>
+          </div>
+          <div class="input-container">
+            <input type="email" name="email" class="input" />
+            <label for="">Email</label>
+            <span>Email</span>
+          </div>
+          <div class="input-container">
+            <input type="tel" name="phone" class="input" />
+            <label for="">Phone</label>
+            <span>Phone</span>
+          </div>
+          <div class="input-container textarea">
+            <textarea name="message" class="input"></textarea>
+            <label for="">Message</label>
+            <span>Message</span>
+          </div>
+          <input type="submit" value="Send" class="btn" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer-padding"></div>
+  <div class="footer" style="height:80px; z-index:5000">
+    <div class="social-icons">
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=100069799847643">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a target="_blank" href="https://twitter.com/Vicky_Kumar1001">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a target="_blank" href="https://www.instagram.com/vicky_kumar1001/">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/vicky-kumar1001/">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    <p> Made with ❤️ by Vicky Kumar </p>
+  </div>
+</div>
+</body>
+</html>
+<script>
+    const inputs = document.querySelectorAll(".input");
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
+
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
+}
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});
+  </script>

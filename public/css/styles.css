@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav {
+    background-color: rgb(227, 227, 227);
+    height:80px;
+    width:100%;
+}
+.logo{
+    padding:0px 100px;
+    font-family: 'Bebas Neue', cursive;
+    font-size:35px;
+    letter-spacing: 5px;
+    line-height: 80px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{ 
+    margin:0 5px;
+    display: inline-block;
+    padding:20px;
+}
+nav ul li a{
+    color:black;
+    font-size:18px;
+    padding:7px 13px;
+    border-radius: 3px;
+}
+a:hover {
+    background-color: #eeecec;
+    color: #1abc9c !important;
+    transition: .5s;
+}
+.homepost{
+    color:rgb(4, 212, 142);
+}
+.post{
+    padding:10px 0;
+}
+.checkbtn{
+    font-size: 30px;
+    color:black;
+    float:right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor:pointer;
+    display: none;
+}
+#check{
+    display:none;
+}
+
+.container{
+    padding:40px 50px;
+}
+.footer-padding {
+	padding-bottom: 80px;
+}
+
+.footer {
+	position: fixed;
+    bottom:0;
+	text-align: center;
+    margin-top:-180px;
+	width: 100%;
+	height: 50px;
+	background-color: #1abc9c;
+}
+
+.footer p {
+	margin-top: 12px;
+	font-size: 16px;
+  color: #fff;
+}
+h1{
+    font-family: 'Solitreo', cursive;
+    font-size: 50px;
+font-weight: 900;
+}
+p{
+    font-size: large;
+    letter-spacing: 0.8px;
+    word-spacing: 1px;
+    line-height: 1.5em;
+}
+@media(max-width : 870px){
+    label.logo{
+        font-size: 25px;
+        padding-left: 25px;
+    }
+    nav ul li a{
+        font-size:16px;
+    }
+    .checkbtn{
+        display:block;
+    }
+    ul{
+        position:fixed;
+        width:100%;
+        height:100vh;
+        background:#c9c4c4;
+        top:80px;
+        left:0;
+        text-align: center;
+        left:-100%;
+        transition: all .5s;
+    }
+    nav ul li{
+        display:block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
