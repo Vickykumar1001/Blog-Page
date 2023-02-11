@@ -1,0 +1,27 @@
+.btn {
+    padding: 0.6rem 1.3rem;
+    background-color: #ffffff;
+    border: 2px solid #1abc9c;
+    font-size: 0.95rem;
+    color: #1abc9c;
+    line-height: 1;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin:10px;
+  }
+  
+  .btn:hover {
+    background-color: #1abc9c;
+    color: #fff;
+  }
+  .input{
+    margin:10px;
+    border: 2px solid #1abc9c;
+    color: #1abc9c;
+    max-width: 200px;
+  }
+  .pass{
+    text-align: center;
+  }

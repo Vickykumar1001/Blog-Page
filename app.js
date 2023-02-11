@@ -30,7 +30,16 @@ app.get("/contact",function(req,res){
     res.render("contact");
 });
 app.get("/compose",function(req,res){
-    res.render("compose");
+    res.render("password");
+    // res.render("compose");
+});
+app.post("/password",function(req,res){
+    const pass=req.body.blog_pass;
+    if(pass==process.env.PASSWORD){
+        res.render("compose");
+    } else{
+        res.redirect("/");
+    }
 });
 app.post("/compose",function(req,res){
     const post = new Post({
